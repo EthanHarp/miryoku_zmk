@@ -1,16 +1,16 @@
 # Copyright 2023 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example Corne-ish Zen Custom'
+name: 'My Custom'
 on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '[
-        "corneish_zen_v1_left","corneish_zen_v1_right",
-        "corneish_zen_v2_left","corneish_zen_v2_right"
-      ]'
-      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y"]'
-      branches: '["zmkfirmware/zmk/v0.3-branch caksoylar/zmk/caksoylar/zen-v1+v2"]'
+      board: '["nice_nano_v2"]'
+      shield: '["corne_left","corne_right]'
+      alphas: '["qwerty"]'
+      extra: '["default"]'
+      tap: '["qwerty"]'
+      nav: '["vi"]'

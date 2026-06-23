@@ -28,6 +28,38 @@ on:
         - "QWERTY"
         - "QWERTZ"
         - "Workman"
+      extra:
+        description: 'extra'
+        required: false
+        default: 'default'
+        type: choice
+        options:
+        - "default"
+        - "AZERTY"
+        - "BEAKL15"
+        - "Colemak"
+        - "ColemakDHK"
+        - "Dvorak"
+        - "Halmak"
+        - "QWERTY"
+        - "QWERTZ"
+        - "Workman"
+      tap:
+        description: 'tap'
+        required: false
+        default: 'default'
+        type: choice
+        options:
+        - "default"
+        - "AZERTY"
+        - "BEAKL15"
+        - "Colemak"
+        - "ColemakDHK"
+        - "Dvorak"
+        - "Halmak"
+        - "QWERTY"
+        - "QWERTZ"
+        - "Workman"
       nav:
         description: 'nav'
         required: false
